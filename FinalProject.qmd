@@ -22,7 +22,7 @@ The data was sourced from Basketball Reference, using the rvest library to scrap
 #| warning: false
 #| echo: true
 
-# load packages
+# Load packages
 library(tidyverse)
 library(rvest)
 library(dplyr)
