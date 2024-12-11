@@ -4,7 +4,8 @@ library(dplyr)
 library(ggplot2)
 
 # Load data
-nbaRawList <- read_html(x = "https://www.basketball-reference.com/leagues/NBA_stats_per_game.html") %>%
+url <- "https://www.basketball-reference.com/leagues/NBA_stats_per_game.html"
+nbaRawList <- read_html(x = url) %>%
   html_elements(css = "table") %>%
   html_table()
 
