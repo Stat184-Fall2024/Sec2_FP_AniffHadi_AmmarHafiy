@@ -1,21 +1,20 @@
-# load the packages
-
+# Load the packages
 library(dplyr)
 library(rvest)
 library(ggplot2)
 library(tidyverse)
 
-# load data
+# Load data
 url <- "https://en.wikipedia.org/wiki/NBA_Finals_television_ratings"
 ratingViewershipDataset <- rvest::read_html(x = url) %>%
   html_elements(css = "table") %>%
   html_table()
 
-# view data
+# View data
 ratingViewershipRaw <- ratingViewershipDataset[[4]]
 view(ratingViewershipRaw)
 
-# wrangling data
+# Wrangling data
 ratingViewershipData <- ratingViewershipRaw %>%
   select(
     "Year",
@@ -43,6 +42,7 @@ ratingViewershipData <- ratingViewershipRaw %>%
     AvgViews_M
   )
 
+# Plot
 ggplot(
   data = ratingViewershipData,
   mapping = aes(
