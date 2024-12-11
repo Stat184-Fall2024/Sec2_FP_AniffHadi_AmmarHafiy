@@ -24,7 +24,10 @@ nbaLeagueAveragesPolished <- nbaLeagueAverages %>%
     `PTS` = as.numeric(`PTS`)
   )  %>%
   filter(MP != "Per Game", Season != "Season", Season >= 1980) %>%
-  select("Season", "FGA", "3PA", "PTS")
+  select("Season", "FGA", "3PA", "PTS") %>%
+  mutate(
+    `3PAr` = as.numeric(`3PA`) / as.numeric(FGA)  # Create Three-Point Attempt Rate (3PAr)
+  )
 
 # Plot
 ggplot(
