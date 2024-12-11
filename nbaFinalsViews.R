@@ -3,9 +3,11 @@
 library(dplyr)
 library(rvest)
 library(ggplot2)
+library(tidyverse)
 
 # load data
-ratingViewershipDataset <- rvest::read_html("https://en.wikipedia.org/wiki/NBA_Finals_television_ratings") %>%
+url <- "https://en.wikipedia.org/wiki/NBA_Finals_television_ratings"
+ratingViewershipDataset <- rvest::read_html(x = url) %>%
   html_elements(css = "table") %>%
   html_table()
 
@@ -55,4 +57,3 @@ ggplot(
     title = "Average Finals Views Throughout the Years"
   ) +
   theme_minimal()
-
