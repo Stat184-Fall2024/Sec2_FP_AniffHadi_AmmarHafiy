@@ -11,6 +11,7 @@ nbaRawList <- read_html(x = url) %>%
 
 # View data
 nbaLeagueAveragesRaw <- nbaRawList[[2]]
+view(nbaLeagueAveragesRaw)
 
 # Wrangling data
 colnames(nbaLeagueAveragesRaw) <- nbaLeagueAveragesRaw[1, ] 
