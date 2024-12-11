@@ -6,8 +6,11 @@ Implementation:
 1. Data collection: The data was sourced from Basketball Reference, using the rvest library to scrape the statistics table. The raw data included league averages for various metrics per game for all seasons.
 2. Data wrangling: Using the tidyverse package, the data was processed as follows:
    a) Renamed columns using the first row for better clarity.
+   
    b) Filtered out unnecessary rows and restricted the dataset to seasons from 1980 onwards.
+   
    c) Converted the Season column into numeric format, distinguishing between 20th and 21st centuries.
+   
    d) Selected relevant columns: Season, FGA, 3PA, and PTS.
 4. Challenges and Solutions:
    a) Issue: Handling ambiguous century notation in the Season column (e.g., "98" could mean 1998 or 2098).
