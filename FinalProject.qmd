@@ -10,15 +10,28 @@ html:
 
 # INTRODUCTION
 
-This project examines the decline in the average viewership and ratings of the NBA Finals over the years, exploring the factors contributing to this trend. For instance, in 1998, the NBA Finals averaged 29.04 million viewers, whereas in 2024, the average viewership dropped to 11.31 million.
+This project looks at the decline in NBA Finals viewership over the years, with a particular focus on the growing reliance on three-point shots. For example, in 1998, the NBA Finals attracted an average of 29.04 million viewers, but by 2024, that number had fallen to just 11.31 million. In contrast, three-point attempts have seen a huge jump during the same period. Back in 1998, teams averaged only 5.8 three-point attempts per game, but by 2024, that number skyrocketed to 33.4—a nearly 5 time increase!
 
-# IMPLEMENTATION
+In the last decade, the NBA’s style of play has changed dramatically, with the three-point shot now driving most offensive strategies. While this shift has led to some exciting individual performances and new records, it has also sparked concerns about the direction of the game. Many fans feel that the heavy focus on three-point shooting has made the game more predictable and less exciting overall. Critics argue that it’s taken away from the balance, creativity, and team-oriented play that once made the NBA so appealing. This report will explore how the rise in three-point attempts, despite transforming the sport, may be a key factor in the decline of fan interest and TV ratings.
 
-## Data collection
+# VIEWERSHIP
+
+To start this project, we have to find the data that shows the trend of the viewership. We were able to find one data from Wikipedia, which is the average final games views throughout the years. After wrangling the data, the data will show the viewership of the average final games from the year 1986 until 2024. After that, we plot the line graph to see whether the viewership is declining or not.
+
+![](average finals views.png)
+
+As we can see from the graph, it is declining. The peak views is 29.04 million in the year 1994 while the lowest views is 7.45 million in 2020. Now obviously in 2020, it was during COVID-19 pandemic that would cause the lower viewership. However, we would argue that even before COVID-19, there was a significant decline in viewership. Which means that there could be other factors that would cause this decline.
+
+# CODE IMPLEMENTATION
+
+## Three-Point Shot Attempts
+
+### Data collection
 
 The data was sourced from Basketball Reference, using the rvest library to scrape the statistics table. The raw data included league averages for various metrics per game for all seasons.
 
-```{r}
+```{r eval=FALSE}
+#| label: load-packages
 #| warning: false
 #| echo: true
 
@@ -39,23 +52,73 @@ nbaLeagueAveragesRaw <- nbaRawList[[2]]
 view(nbaLeagueAveragesRaw)
 ```
 
-## Data wrangling
+### Data wrangling
 
 Using the tidyverse package, the data was processed as follows:
 
 ```         
 i.  Renamed columns using the first row for better clarity.
+```
 
+```{r eval=FALSE}
+#| label: rename
+#| warning: false
+#| echo: true
+
+mutate(Season = as.numeric(str_sub(Season, -2))
+```
+
+```         
 ii. Filtered out unnecessary rows and restricted the dataset to seasons from 1980 onwards.
+```
+
+```{r eval=FALSE}
+#| label: filter
+#| warning: false
+#| echo: true
+
+filter(MP != "Per Game", Season != "Season", Season >= 1980)
+```
+
+```         
 
 iii. Converted the Season column into numeric format, distinguishing between 20th and 21st centuries.
+```
+
+```{r eval=FALSE}
+#| label: convert
+#| warning: false
+#| echo: true
+
+mutate(
+  Season = if_else(Season > 46, 1900 + Season, 2000 + Season),
+  `FGA` = as.numeric(`FGA`),
+  `3PA` = as.numeric(`3PA`),
+  `PTS` = as.numeric(`PTS`)
+)
+```
+
+```         
 
 iv. Selected relevant columns: Season, FGA, 3PA, and PTS.
 ```
 
+```{r eval=FALSE}
+#| label: select
+#| warning: false
+#| echo: true
+
+select(
+       "Season",
+       "FGA",
+       "3PA",
+       "PTS"
+       )
+```
+
 <!-- -->
 
-## Challenges and Solutions
+### Challenges and Solutions
 
 ```         
 i)  Issue: Handling ambiguous century notation in the Season column (e.g., "98" could mean 1998 or 2098).
@@ -67,12 +130,121 @@ ii) Issue: The presence of unwanted rows (e.g., headers repeated within the tabl
 Solution: Applied filter() to exclude rows containing "Per Game" or "Season".
 ```
 
-## Result/Conclusion
+### Result/Conclusion
 
 The processed data revealed significant trends in NBA gameplay:
 
 i)  A noticeable increase in three-point attempts (3PA) over time, indicating the league's shift toward perimeter shooting.
 
 ii) Field goal attempts (FGA) and points scored (PTS) have also evolved, reflecting changes in game pace and scoring efficiency.
+
+## NBA Finals Viewership
+
+### Data collection
+
+The data was sourced from Wikipedia, using the rvest library to scrape the statistics table. The raw data included the various tables including viewerships and ratings.
+
+```{r eval=FALSE}
+#| label: load-packages2
+#| warning: false
+#| echo: true
+
+# Load packages
+library(dplyr)
+library(rvest)
+library(ggplot2)
+library(tidyverse)
+
+# Load data
+url <- "https://en.wikipedia.org/wiki/NBA_Finals_television_ratings"
+ratingViewershipDataset <- rvest::read_html(x = url) %>%
+  html_elements(css = "table") %>%
+  html_table()
+
+# View data
+ratingViewershipRaw <- ratingViewershipDataset[[4]]
+view(ratingViewershipRaw)
+```
+
+### Data wrangling
+
+Using the tidyverse package, the data was processed as follows:
+
+```         
+i.  Select the necessary attributes.
+```
+
+```{r eval=FALSE}
+#| label: select2
+#| warning: false
+#| echo: true
+
+select(
+    "Year",
+    "Network",
+    "Avg",
+    "Game 1",
+    "Game 2",
+    "Game 3",
+    "Game 4",
+    "Game 5",
+    "Game 6"
+    )
+```
+
+```         
+ii. Filtered out unnecessary rows and restricted the dataset to seasons from 1980 onwards.
+```
+
+```{r eval=FALSE}
+#| label: filter2
+#| warning: false
+#| echo: true
+
+filter(as.numeric(Year) > 1985)
+```
+
+```         
+
+iii. Changing the Viewership data from the unecessary data by removing it.
+```
+
+```{r eval=FALSE}
+#| label: convert2
+#| warning: false
+#| echo: true
+
+mutate(
+    Year = as.numeric(str_remove(Year, "\\[.*\\]")),
+    AvgRating = str_extract(Avg, "^[^\\(]+"),
+    AvgViews_M = str_extract(Avg, "\\(([^\\)]+)\\)") %>%
+      str_remove_all("[\\(\\)]") %>%
+      str_remove("M Viewers|MViewers|MHouseholds") %>%
+      as.numeric()
+  )
+```
+
+```         
+
+iv. Selected relevant columns: Season, FGA, 3PA, and PTS.
+```
+
+```{r eval=FALSE}
+#| label: select3
+#| warning: false
+#| echo: true
+
+select(
+    Year,
+    Network,
+    AvgViews_M
+  )
+```
+
+### Result/Conclusion
+
+The processed data revealed significant trends in NBA Finals viewership:
+
+i)  The decline in average viewership can be seen in the data
 
 Contact: For questions, feel free to reach out via email: amh8394\@psu.edu or ama8594\@psu.edu
