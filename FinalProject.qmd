@@ -18,9 +18,21 @@ In the last decade, the NBA’s style of play has changed dramatically, with the
 
 To start this project, we have to find the data that shows the trend of the viewership. We were able to find one data from Wikipedia, which is the average final games views throughout the years. After wrangling the data, the data will show the viewership of the average final games from the year 1986 until 2024. After that, we plot the line graph to see whether the viewership is declining or not.
 
-![](average finals views.png)
+![](average finals views.png) Figure 1
 
 As we can see from the graph, it is declining. The peak views is 29.04 million in the year 1994 while the lowest views is 7.45 million in 2020. Now obviously in 2020, it was during COVID-19 pandemic that would cause the lower viewership. However, we would argue that even before COVID-19, there was a significant decline in viewership. Which means that there could be other factors that would cause this decline.
+
+# THREE-POINTS SHOT ATTEMPTS
+
+We have theorized that the amount of three-point shot attempts in the games would cause the increase in decline in the viewership. The reason why we say this is because people get bored of the gameplay because everytime the players trying to score points, they will attempt the three-point shot. This makes the game less exciting and predictable. It is different during the times where three-points shot were rarely attempted. A lot of variations that the players used to score points instead of just shooting at a long range. In Michael Jordan era for example, we can see that in Figure 1, in the year 19XX, we can see that the views are high, which we can conclude that people were excited to see the players play.
+
+To confirm this theory, we gathered our data from Basketball Reference to see whether or not the three-points shot attempts is increasing throughout the years or remain constant. After cleaning the data, we implement the line graph to see the trends of three-points shot attempts.
+
+*** Image
+
+We can see from the line graph that the three-points shot attempts increased drastically. Which would confirm our theory.
+
+We have theorized on why three-points shot attempts keep increasing over time. The theory is that many players want to copy the star-player Stephen Curry, who is the goat of three-points shot. Ammar can continue/fix this essay
 
 # CODE IMPLEMENTATION
 
