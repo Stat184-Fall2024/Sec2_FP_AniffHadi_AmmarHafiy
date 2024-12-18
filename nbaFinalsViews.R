@@ -1,4 +1,4 @@
-# Load the packages
+# Load packages
 library(dplyr)
 library(rvest)
 library(ggplot2)
