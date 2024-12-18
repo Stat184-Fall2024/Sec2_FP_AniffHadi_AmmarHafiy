@@ -28,7 +28,7 @@ We have theorized that the amount of three-point shot attempts in the games woul
 
 To confirm this theory, we gathered our data from Basketball Reference to see whether or not the three-points shot attempts is increasing throughout the years or remain constant. After cleaning the data, we implement the line graph to see the trends of three-points shot attempts.
 
-![](average 3pa.png)
+![](average 3pa.png) Figure 2
 
 We can see from the line graph that the three-points shot attempts increased drastically. Which would confirm our theory.
 
