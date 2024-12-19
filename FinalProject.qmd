@@ -8,88 +8,100 @@ html:
   df-print: paged
 ---
 
-# INTRODUCTION
+# Introduction
 
-The National Basketball Association (NBA) has experienced significant changes in its gameplay and audience engagement over the years. Two notable trends stand out: the fluctuating patterns of NBA viewership and the increasing prevalence of three-point attempts. These phenomena are interconnected, reflecting broader shifts in the sport’s cultural and strategic landscape. 
+The National Basketball Association (NBA) has experienced significant changes in its gameplay and audience engagement over the years. Two notable trends stand out: the fluctuating patterns of NBA viewership and the increasing prevalence of three-point attempts. These phenomena are interconnected, reflecting broader shifts in the sport’s cultural and strategic landscape.
 
 In this report, I will investigate the trends in NBA viewership and the increasing prevalence of three-point attempts. I'll begin by providing relevant background information on the history of NBA viewership and the rise of the three-point shot. Next, I will explore how these two trends have evolved over time, drawing on data and research to understand their interconnections. I will then discuss how the rise of three-point shooting has affected NBA viewership patterns, particularly among different demographics. Finally, I will conclude with a discussion of the implications of these trends for the future of the NBA and its global reach.
 
-# METHODOLOGY
+# Methodology
 
 To investigate the relationship between NBA viewership trends and the increasing number of three-point attempts (3PA) over time, data sets were compiled from historical records of NBA regular-season games and NBA Finals broadcasts. The analysis aimed to explore whether changes in three-point shooting frequency correspond to variations in fan interest, as measured by TV viewership.
 
 Data on the average three-point attempts (3PA) per game were collected from NBA regular-season statistics spanning from the early 1980s to 2023. The number of 3PAs per game represents the average across all NBA teams each season. NBA Finals viewership data were obtained from publicly available television ratings. The data cover average views per Finals series (in millions) from the late 1980s through 2023.
 
-# ANALYSIS APPROACH
+# Analysis Approach
 
 The following steps were taken to analyze the data:
-1.	Visualization:
-o	A line graph was created to show the Average 3PA per Game Throughout the Years, illustrating the steady increase in three-point shot attempts over time.
-o	A second line graph plotted Average Finals Views Throughout the Years, showing fluctuations in viewership trends.
-o	A combined line graph was then produced to illustrate the relationship between three-point attempts and Finals viewership, highlighting potential trends or correlations between the two variables.
-2.	Key Research Question:
-The analysis focuses on answering the question:
-“Has the increase in three-point attempts influenced NBA Finals viewership trends?”
-3.	Statistical Methods:
-o	Basic descriptive statistics were calculated to measure the average and variation in three-point attempts and Finals viewership across different eras.
-o	Visual trends were assessed to identify potential relationships (e.g., periods where increases in 3PA coincided with declines or rises in viewership).
 
-# DATA EXPLORATION
+1.  Visualization:
+
+-   A line graph was created to show the Average 3PA per Game Throughout the Years, illustrating the steady increase in three-point shot attempts over time.
+-   A second line graph plotted Average Finals Views Throughout the Years, showing fluctuations in viewership trends.
+-   A combined line graph was then produced to illustrate the relationship between three-point attempts and Finals viewership, highlighting potential trends or correlations between the two variables.
+
+2.  Key Research Question: The analysis focuses on answering the question: “Has the increase in three-point attempts influenced NBA Finals viewership trends?”
+
+3.  Statistical Methods:
+
+-   Basic descriptive statistics were calculated to measure the average and variation in three-point attempts and Finals viewership across different eras.
+-   Visual trends were assessed to identify potential relationships (e.g., periods where increases in 3PA coincided with declines or rises in viewership).
+
+# Data Exploration
 
 In the era of advanced analytics, exploring trends in sports can reveal valuable insights about the evolution of gameplay and fan engagement. By analyzing historical data on NBA three-point attempts (3PA) and Finals viewership, we can better understand how the league's strategies and popularity have changed over time. This exploration leverages three visualizations to illustrate key trends and relationships.
 
 To start this project, we have to find the data that shows the trend of the viewership. We were able to find one data from Wikipedia, which is the average final games views throughout the years. After wrangling the data, the data will show the viewership of the average final games from the year 1986 until 2024. After that, we plot the line graph to see whether the viewership is declining or not.
 
-# Graph 1: The Rise of Three-Point Attempts
+## Graph 1: Trends in NBA Finals Viewership
 
-[graph 1 here]
-
-The first graph highlights the average number of three-point attempts per game (3PA) from the 1980s through the 2020s. This visualization shows a clear and dramatic increase in the reliance on the three-point shot:
-
-1.	Initial Years (1980s-1990s):
-In the early years after the three-point line was introduced (1979), teams were hesitant to utilize the three-point shot, with an average of fewer than five attempts per game. Gradual increases began in the late 1980s.
-
-2.	Mid-1990s Surge:
-A noticeable spike occurred in the mid-1990s, correlating with changes in offensive strategies and players who specialized in long-range shooting.
-
-3.	Modern Era (2010s-Present):
-The most significant growth began in the 2010s, reflecting the influence of analytics-driven basketball and teams like the Golden State Warriors popularizing the three-point-focused offense. By the 2020s, teams averaged about 35 attempts per game.
-
-This graph demonstrates a fundamental shift in NBA strategy: the three-point shot has become a core component of team offenses, revolutionizing the game.
-
-# Graph 2: Trends in NBA Finals Viewership
-
-[graph 2 here]
+![Average NBA Finals Game Viewership from 1986 until 2024](average%20finals%20views.png){fig-align="center"}
 
 The second graph focuses on average NBA Finals viewership (in millions) from the late 1980s to 2023. Key observations include:
 
-1.	Peak Viewership (1990s-2000s):
-Finals viewership reached its highest levels during the 1990s, coinciding with the dominance of iconic players like Michael Jordan and the popularity of teams like the Chicago Bulls. Some years saw viewership exceed 25 million viewers.
+1.  Peak Viewership (1990s-2000s): Finals viewership reached its highest levels during the 1990s, coinciding with the dominance of iconic players like Michael Jordan and the popularity of teams like the Chicago Bulls. Some years saw viewership exceed 25 million viewers.
 
-2.	Decline in the 2000s:
-After the retirement of key superstars from the 1990s, viewership fluctuated and generally declined. Despite high-profile matchups in the 2000s (e.g., Lakers vs. Celtics), Finals viewership was inconsistent.
+2.  Decline in the 2000s: After the retirement of key superstars from the 1990s, viewership fluctuated and generally declined. Despite high-profile matchups in the 2000s (e.g., Lakers vs. Celtics), Finals viewership was inconsistent.
 
-3.	Recent Declines (2020s):
-In the 2020s, viewership has dipped significantly, with some Finals series drawing fewer than 10 million viewers. Factors contributing to this decline include changes in media consumption habits, competition from other entertainment sources, and global disruptions like the COVID-19 pandemic.
+3.  Recent Declines (2020s): In the 2020s, viewership has dipped significantly, with some Finals series drawing fewer than 10 million viewers. Factors contributing to this decline include changes in media consumption habits, competition from other entertainment sources, and global disruptions like the COVID-19 pandemic.
 
 This graph underscores the challenges the NBA faces in maintaining consistent viewership amid a shifting entertainment landscape.
 
-# Graph 3: Comparing 3PA and Finals Viewership
+## Graph 2: The Rise of Three-Point Attempts
 
-[graph 3 here]
+![Average Three-Points Shot Attempt from 1980 until 2024](average%203pa.png){fig-align="center"}
+
+The first graph highlights the average number of three-point attempts per game (3PA) from the 1980s through the 2020s. This visualization shows a clear and dramatic increase in the reliance on the three-point shot:
+
+1.  Initial Years (1980s-1990s): In the early years after the three-point line was introduced (1979), teams were hesitant to utilize the three-point shot, with an average of fewer than five attempts per game. Gradual increases began in the late 1980s.
+
+2.  Mid-1990s Surge: A noticeable spike occurred in the mid-1990s, correlating with changes in offensive strategies and players who specialized in long-range shooting.
+
+3.  Modern Era (2010s-Present): The most significant growth began in the 2010s, reflecting the influence of analytics-driven basketball and teams like the Golden State Warriors popularizing the three-point-focused offense. By the 2020s, teams averaged about 35 attempts per game.
+
+This graph demonstrates a fundamental shift in NBA strategy: the three-point shot has become a core component of team offenses, revolutionizing the game.
+
+## Graph 3: Comparing 3PA and Finals Viewership
+
+![Comparing Three-Points Shot Attempts Line Graph vs Final NBA Games Viewership Line Graph](Three-Point%20Attempts%20vs.%20Finals%20Viewership.png){fig-align="center"}
 
 The third graph combines the trends of three-point attempts (3PA) and Finals viewership on the same timeline. This visualization offers insights into potential relationships between gameplay evolution and fan interest:
 
-1.	Diverging Trends:
-While three-point attempts have steadily increased, viewership has not followed a similar upward trajectory. In fact, as 3PA rose sharply in the 2010s, Finals viewership experienced volatility and a downward trend in the 2020s.
+1.  Diverging Trends: While three-point attempts have steadily increased, viewership has not followed a similar upward trajectory. In fact, as 3PA rose sharply in the 2010s, Finals viewership experienced volatility and a downward trend in the 2020s.
 
-2.	Possible Inverse Relationship:
-The divergence suggests a potential inverse relationship: while the NBA has embraced a more three-point-centric style of play, this shift may not necessarily appeal to all fans. Traditional basketball enthusiasts who prefer a diverse style of play might be less engaged with the modern three-point-heavy approach.
+2.  Possible Inverse Relationship: The divergence suggests a potential inverse relationship: while the NBA has embraced a more three-point-centric style of play, this shift may not necessarily appeal to all fans. Traditional basketball enthusiasts who prefer a diverse style of play might be less engaged with the modern three-point-heavy approach.
 
-3.	Contextual Factors:
-It is essential to consider external factors affecting viewership, such as changes in broadcasting, streaming services, and societal influences. While the rise in 3PA is a significant trend, it is just one piece of the puzzle when analyzing NBA popularity.
+3.  Contextual Factors: It is essential to consider external factors affecting viewership, such as changes in broadcasting, streaming services, and societal influences. While the rise in 3PA is a significant trend, it is just one piece of the puzzle when analyzing NBA popularity.
 
 This combined graph highlights the importance of exploring multiple variables to understand complex phenomena like sports viewership and gameplay trends.
+
+## Summary Table of NBA Finals Viewership
+
+![NBA Final Games Viewership Summary Table](summarytableviews.png){fig-align="center"}
+
+The summary statistics for NBA Finals viewership provide insight into audience engagement with the league's premier event. Across 38 recorded years, average Finals viewership reached 17.47 million, with a relatively smaller SD of 5.12. This suggests that while viewership fluctuated over time, the variations were moderate. The minimum viewership recorded was 7.45 million, while the maximum reached 29.04 million, showing that certain eras, such as the Michael Jordan-dominated 1990s, achieved exceptional popularity.
+
+The quartiles reveal a more detailed distribution of audience trends: the first quartile (Q1) at 14.37 million and the third quartile (Q3) at 20.36 million indicate a significant portion of Finals broadcasts attracted an audience within this range. However, the declining trend in recent years, exacerbated by changing media consumption habits and global events like the COVID-19 pandemic, has posed challenges for maintaining high viewership numbers. These statistics underscore the importance of adapting to shifts in audience preferences and technology to sustain the NBA's global appeal.
+
+## Summary Table of Three-Point Shot Over Time
+
+![Three-Pointer Shot Attempts Summary Table](summarytable3pa.png){alt="Three-Pointer Shot Attempts Summary Table" fig-align="center"}
+
+The increasing emphasis on three-point shooting in the NBA is evident when analyzing the summary statistics for three-point shot attempts (3PA). The data reveal that over a span of 45 years, teams averaged 16.78 three-point attempts per game with a standard deviation (SD) of 9.88. The range of values, from a minimum of 2.1 to a maximum of 36.3 attempts, highlights the dramatic transformation of offensive strategies in the NBA. This evolution is further supported by the median value of 17.2 and an interquartile range (IQR) of 12 (Q3 = 20.6, Q1 = 8.6). The lower quartile shows that even in earlier years, some teams made a limited but increasing number of attempts, while the upper quartile reflects the rapid adoption of three-point-heavy offenses in modern basketball.
+
+The sharp rise in three-point shot attempts reflects the growing influence of analytics, which emphasize the efficiency of long-range shooting. By the 2010s, this trend became central to the strategies of many teams, driven by players like Stephen Curry and organizations such as the Golden State Warriors. The increasing frequency of three-point attempts has fundamentally reshaped how teams approach scoring, spacing, and overall gameplay.
+
+\newpage
 
 # NBA Viewership Trends
 
@@ -111,165 +123,52 @@ However, there are concerns that the overreliance on three-point attempts might 
 
 Additionally, the three-point trend has influenced how games are marketed and broadcasted. Networks frequently highlight three-point shootouts in pregame analyses and game recaps, which can either captivate or frustrate viewers depending on their preferences. Ultimately, the impact of the three-point emergence on viewership depends on the league’s ability to balance innovation with maintaining the diversity of gameplay styles.
 
-# Interconnections Between Viewership and Gameplay 
+# Interconnections Between Viewership and Gameplay
 
 The rise of the three-point shot has had mixed effects on NBA viewership. On one hand, the dynamic style of play, characterized by long-range shooting and high-scoring games, has attracted younger audiences and casual fans (Lee, 2020). On the other hand, critics argue that the overreliance on three-point attempts diminishes the game’s diversity and predictability, potentially alienating traditional fans (Johnson, 2021).
 
 Moreover, the NBA has leveraged the three-point revolution in marketing campaigns and global outreach. Highlight reels featuring deep three-pointers and buzzer-beaters have become central to the league’s social media strategy, driving engagement on platforms like Instagram and TikTok (NBA Digital, 2022).
 
-# Conclusion 
+# Conclusion
 
 Through data exploration using these three graphs, we gain a clearer picture of how the NBA has evolved both on and off the court. The dramatic increase in three-point attempts reflects the league's strategic transformation, while the fluctuating Finals viewership points to challenges in maintaining fan engagement. By visualizing and interpreting these trends, analysts, fans, and league officials can better understand the dynamics of modern basketball and consider strategies to balance innovation with broader audience appeal.
 
 The trends in NBA viewership and the strategic shift toward three-point shooting highlight the league’s ability to adapt to changing cultural and economic landscapes. While the increasing emphasis on three-point attempts has reshaped the game, its impact on viewership remains nuanced. Future research should explore how these trends intersect with broader societal changes and what they mean for the NBA’s long-term growth.
 
+\newpage
+
 # References
 
-•	Basketball Reference. (n.d.). NBA stats per game. Retrieved December 18, 2024, from https://www.basketball-reference.com/leagues/NBA_stats_per_game.html
-•	Goldsberry, K. (2019). Sprawlball: A visual tour of the new era of the NBA. Mariner Books.
-•	Johnson, M. (2021). "The three-point problem: How analytics changed basketball." Sports Analytics Journal, 14(2), 45-56.
-•	Lee, R. (2020). "Youth engagement in the NBA: The role of social media and gameplay." Journal of Sports Marketing, 9(3), 88-102.
-•	NBA Digital. (2022). "Social media and the rise of the three-pointer." NBA Media Insights. Retrieved from https://www.nba.com
-•	NBA Media Report. (2021). "Viewership trends during the pandemic era." NBA Press Releases. Retrieved from https://www.nba.com
-•	Oliver, D. (2014). Basketball on paper: Rules and tools for performance analysis. Potomac Books.
-•	Smith, J. (2020). "The golden age of the NBA: A historical perspective." Hoops History Quarterly, 18(1), 23-39.
-•	Turner, P. (2022). "Broadcasting in the digital age: Challenges and opportunities for the NBA." Sports Broadcasting Review, 11(4), 67-75.
-•	Wikipedia contributors. (n.d.). NBA Finals television ratings. In Wikipedia. Retrieved December 18, 2024, from https://en.wikipedia.org/wiki/NBA_Finals_television_ratings
+- Basketball Reference. (n.d.). NBA stats per game. Retrieved December 18, 2024, from https://www.basketball-reference.com/leagues/NBA_stats_per_game.html
 
+- Goldsberry, K. (2019). *Sprawlball: A visual tour of the new era of the NBA*. Mariner Books.
 
+- Johnson, M. (2021). "The three-point problem: How analytics changed basketball." *Sports Analytics Journal, 14*(2), 45–56.
 
-# CODE IMPLEMENTATION
+- Lee, R. (2020). "Youth engagement in the NBA: The role of social media and gameplay." *Journal of Sports Marketing, 9*(3), 88–102.
 
-## Three-Point Shot Attempts
+- NBA Digital. (2022). "Social media and the rise of the three-pointer." NBA Media Insights. Retrieved from https://www.nba.com
 
-### Data collection
+- NBA Media Report. (2021). "Viewership trends during the pandemic era." NBA Press Releases. Retrieved from https://www.nba.com
 
-The data was sourced from Basketball Reference, using the rvest library to scrape the statistics table. The raw data included league averages for various metrics per game for all seasons.
+- Oliver, D. (2014). *Basketball on paper: Rules and tools for performance analysis*. Potomac Books.
 
-```{r eval=FALSE}
-#| label: load-packages
-#| warning: false
-#| echo: true
+- Smith, J. (2020). "The golden age of the NBA: A historical perspective." *Hoops History Quarterly, 18*(1), 23–39.
 
+- Turner, P. (2022). "Broadcasting in the digital age: Challenges and opportunities for the NBA." *Sports Broadcasting Review, 11*(4), 67–75.
+
+- Wikipedia contributors. (n.d.). NBA Finals television ratings. In Wikipedia. Retrieved December 18, 2024, from https://en.wikipedia.org/wiki/NBA_Finals_television_ratings
+
+\newpage
+
+# Code Appendix
+
+```{r codeAppend, ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE}
 # Load packages
 library(tidyverse)
 library(rvest)
 library(dplyr)
 library(ggplot2)
-
-# Load data
-url <- "https://www.basketball-reference.com/leagues/NBA_stats_per_game.html"
-nbaRawList <- read_html(x = url) %>%
-  html_elements(css = "table") %>%
-  html_table()
-
-# View data
-nbaLeagueAveragesRaw <- nbaRawList[[2]]
-view(nbaLeagueAveragesRaw)
-```
-
-### Data wrangling
-
-Using the tidyverse package, the data was processed as follows:
-
-```         
-i.  Renamed columns using the first row for better clarity.
-```
-
-```{r eval=FALSE}
-#| label: rename
-#| warning: false
-#| echo: true
-
-mutate(Season = as.numeric(str_sub(Season, -2))
-```
-
-```         
-ii. Filtered out unnecessary rows and restricted the dataset to seasons from 1980 onwards.
-```
-
-```{r eval=FALSE}
-#| label: filter
-#| warning: false
-#| echo: true
-
-filter(MP != "Per Game", Season != "Season", Season >= 1980)
-```
-
-```         
-
-iii. Converted the Season column into numeric format, distinguishing between 20th and 21st centuries.
-```
-
-```{r eval=FALSE}
-#| label: convert
-#| warning: false
-#| echo: true
-
-mutate(
-  Season = if_else(Season > 46, 1900 + Season, 2000 + Season),
-  `FGA` = as.numeric(`FGA`),
-  `3PA` = as.numeric(`3PA`),
-  `PTS` = as.numeric(`PTS`)
-)
-```
-
-```         
-
-iv. Selected relevant columns: Season, FGA, 3PA, and PTS.
-```
-
-```{r eval=FALSE}
-#| label: select
-#| warning: false
-#| echo: true
-
-select(
-       "Season",
-       "FGA",
-       "3PA",
-       "PTS"
-       )
-```
-
-<!-- -->
-
-### Challenges and Solutions
-
-```         
-i)  Issue: Handling ambiguous century notation in the Season column (e.g., "98" could mean 1998 or 2098).
-
-    Solution: Assumed seasons with a value greater than 46 belong to the 20th century (1900s) and the rest to the 21st century (2000s).
-
-ii) Issue: The presence of unwanted rows (e.g., headers repeated within the table).
-
-Solution: Applied filter() to exclude rows containing "Per Game" or "Season".
-```
-
-### Result/Conclusion
-
-The processed data revealed significant trends in NBA gameplay:
-
-i)  A noticeable increase in three-point attempts (3PA) over time, indicating the league's shift toward perimeter shooting.
-
-ii) Field goal attempts (FGA) and points scored (PTS) have also evolved, reflecting changes in game pace and scoring efficiency.
-
-## NBA Finals Viewership
-
-### Data collection
-
-The data was sourced from Wikipedia, using the rvest library to scrape the statistics table. The raw data included the various tables including viewerships and ratings.
-
-```{r eval=FALSE}
-#| label: load-packages2
-#| warning: false
-#| echo: true
-
-# Load packages
-library(dplyr)
-library(rvest)
-library(ggplot2)
-library(tidyverse)
 
 # Load data
 url <- "https://en.wikipedia.org/wiki/NBA_Finals_television_ratings"
@@ -280,22 +179,10 @@ ratingViewershipDataset <- rvest::read_html(x = url) %>%
 # View data
 ratingViewershipRaw <- ratingViewershipDataset[[4]]
 view(ratingViewershipRaw)
-```
 
-### Data wrangling
-
-Using the tidyverse package, the data was processed as follows:
-
-```         
-i.  Select the necessary attributes.
-```
-
-```{r eval=FALSE}
-#| label: select2
-#| warning: false
-#| echo: true
-
-select(
+# Wrangling data
+ratingViewershipData <- ratingViewershipRaw %>%
+  select(
     "Year",
     "Network",
     "Avg",
@@ -305,62 +192,142 @@ select(
     "Game 4",
     "Game 5",
     "Game 6"
-    )
-```
-
-```         
-ii. Filtered out unnecessary rows and restricted the dataset to seasons from 1980 onwards.
-```
-
-```{r eval=FALSE}
-#| label: filter2
-#| warning: false
-#| echo: true
-
-filter(as.numeric(Year) > 1985)
-```
-
-```         
-
-iii. Changing the Viewership data from the unecessary data by removing it.
-```
-
-```{r eval=FALSE}
-#| label: convert2
-#| warning: false
-#| echo: true
-
-mutate(
+    ) %>%
+  filter(as.numeric(Year) > 1985) %>%
+  mutate(
     Year = as.numeric(str_remove(Year, "\\[.*\\]")),
     AvgRating = str_extract(Avg, "^[^\\(]+"),
     AvgViews_M = str_extract(Avg, "\\(([^\\)]+)\\)") %>%
       str_remove_all("[\\(\\)]") %>%
       str_remove("M Viewers|MViewers|MHouseholds") %>%
       as.numeric()
-  )
-```
-
-```         
-
-iv. Selected relevant columns: Season, FGA, 3PA, and PTS.
-```
-
-```{r eval=FALSE}
-#| label: select3
-#| warning: false
-#| echo: true
-
-select(
+  ) %>%
+  select(
     Year,
     Network,
     AvgViews_M
   )
+
+# Plot
+ggplot(
+  data = ratingViewershipData,
+  mapping = aes(
+    x = Year,
+    y = AvgViews_M,
+  )
+) +
+  geom_line() +
+  labs(
+    x = "Year",
+    y = "Average Views (Million)",
+    title = "Average Finals Views Throughout the Years"
+  ) +
+  theme_minimal()
+
+# Load data
+url <- "https://www.basketball-reference.com/leagues/NBA_stats_per_game.html"
+nbaRawList <- read_html(x = url) %>%
+  html_elements(css = "table") %>%
+  html_table()
+
+# View data
+nbaLeagueAveragesRaw <- nbaRawList[[2]]
+view(nbaLeagueAveragesRaw)
+
+# Wrangling data
+colnames(nbaLeagueAveragesRaw) <- nbaLeagueAveragesRaw[1, ] 
+nbaLeagueAverages <- nbaLeagueAveragesRaw[-1, -1]
+
+nbaLeagueAveragesPolished <- nbaLeagueAverages %>%
+  mutate(
+    Season = as.numeric(str_sub(Season, -2)), 
+    Season = if_else(Season > 46, 1900 + Season, 2000 + Season),
+    `FGA` = as.numeric(`FGA`),
+    `3PA` = as.numeric(`3PA`),
+    `PTS` = as.numeric(`PTS`)
+  )  %>%
+  filter(MP != "Per Game", Season != "Season", Season >= 1980) %>%
+  select("Season", "FGA", "3PA", "PTS") %>%
+  mutate(
+    `3PAr` = as.numeric(`3PA`) / as.numeric(FGA)  # Create Three-Point Attempt Rate (3PAr)
+  )
+
+# Plot
+ggplot(
+  data = nbaLeagueAveragesPolished,
+  mapping = aes(
+    x = Season,
+    y = `3PA`
+  )
+) + geom_line() +
+  labs(
+    x = "Year",
+    y = "Average 3 Pointer per Game",
+    title = "Average 3 Pointer Attempt per Game Throughout the Years"
+  ) +
+  theme_minimal()
+  
+  # Combine the two datasets by aligning the x-axis attribute (Season/Year)
+combinedData <- nbaLeagueAveragesPolished %>%
+  rename(Year = Season) %>% 
+  inner_join(ratingViewershipData, by = "Year") 
+
+# Plot both lines
+ggplot(data = combinedData) +
+  geom_line(aes(x = Year, y = `3PA`, color = "Average 3PA per Game")) +
+  geom_line(aes(x = Year, y = AvgViews_M, color = "Average Views (Million)")) +
+  scale_y_continuous(
+    name = "Average 3PA per Game",
+    sec.axis = sec_axis(~ ., name = "Average Views (Million)")
+  ) +
+  labs(
+    x = "Year",
+    title = "NBA Trends: Three-Point Attempts vs. Finals Viewership"
+  ) +
+  scale_color_manual(
+    name = "Legend",
+    values = c("Average 3PA per Game" = "blue", "Average Views (Million)" = "red")
+  ) +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+  
+  # summary table viewership
+summary_table <- ratingViewershipData %>%
+  summarize(
+    n = n(),
+    Min = min(AvgViews_M, na.rm = TRUE),
+    Q1 = quantile(AvgViews_M, 0.25, na.rm = TRUE),
+    Median = median(AvgViews_M, na.rm = TRUE),
+    Q3 = quantile(AvgViews_M, 0.75, na.rm = TRUE),
+    Max = max(AvgViews_M, na.rm = TRUE),
+    Mean = mean(AvgViews_M, na.rm = TRUE),
+    SD = sd(AvgViews_M, na.rm = TRUE)
+  )
+
+# Display summary table with kableExtra viewership
+summary_table %>%
+  kbl(caption = "Summary Statistics for Average Views (in Millions)") %>%
+  kable_classic(full_width = FALSE, html_font = "Times New Roman") %>%
+  row_spec(0, bold = TRUE)
+
+  
+  # summary table 3PA
+summary_table <- nbaLeagueAveragesPolished %>%
+  summarize(
+    n = n(),
+    Min = min(`3PA`, na.rm = TRUE),
+    Q1 = quantile(`3PA`, 0.25, na.rm = TRUE),
+    Median = median(`3PA`, na.rm = TRUE),
+    Q3 = quantile(`3PA`, 0.75, na.rm = TRUE),
+    Max = max(`3PA`, na.rm = TRUE),
+    Mean = mean(`3PA`, na.rm = TRUE),
+    SD = sd(`3PA`, na.rm = TRUE)
+  )
+
+# Display summary table with kableExtra 3PA
+summary_table %>%
+  kbl(caption = "Summary Statistics for Three-Points Shot Attempts") %>%
+  kable_classic(full_width = FALSE, html_font = "Times New Roman") %>%
+  row_spec(0, bold = TRUE)
+  
 ```
-
-### Result/Conclusion
-
-The processed data revealed significant trends in NBA Finals viewership:
-
-i)  The decline in average viewership can be seen in the data
-
-Contact: For questions, feel free to reach out via email: amh8394\@psu.edu or ama8594\@psu.edu
